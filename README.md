@@ -3,7 +3,7 @@
 Learning Django with fake applications
 ======================================
 
-##Why
+## Why
 =====
 
 The purpose of this application is solely for learning Django development using a basic app concept.
