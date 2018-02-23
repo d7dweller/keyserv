@@ -1,15 +1,16 @@
 # KeyServ
 
 Learning Django with fake applications
-======================================
+--------------------------------------
 
 ## Why
-=====
+------
+
 
 The purpose of this application is solely for learning Django development using a basic app concept.
 
 ### The app explained
-=====================
+----------------------
 
 The purpose of this site/app is to host GPG keys uploaded to facilitate encrypted communications between site users.
 
