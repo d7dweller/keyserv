@@ -1,0 +1,22 @@
+{% extends "keyserv/base.html" %}
+
+{% block title %}
+Keys
+{% endblock %}
+
+{% block content %}
+<nav class ="navbar navbar-light bg-light">
+    <a href="{% url 'keyserv:keys' %}">Keys</a>
+    <a href="{% url 'keyserv:key_upload' %}">Upload Key</a>
+</nav>
+{% if keys %}
+    <ul>
+    {% for each in keys %}
+    <li><a href="{% url 'keyserv:key_deets' each.id %}">{{ each.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No keys found:[</p>
+{% endif %}
+
+{% endblock %}

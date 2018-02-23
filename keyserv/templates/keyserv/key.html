@@ -1,0 +1,7 @@
+{% extends 'keyserv/base.html' %}
+
+{% block content %}
+<h1>Name: {{ key.name }}</h1>
+<textarea readonly cols=73 rows=35>{{ key.pub_key }}</textarea>
+
+{% endblock %}

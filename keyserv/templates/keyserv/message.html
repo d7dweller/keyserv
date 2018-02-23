@@ -1,0 +1,9 @@
+{% extends 'keyserv/base.html' %}
+
+{% block content %}
+<h1>To: {{ message.to_user }}</h1>
+<p>Post date: {{message.post_date}}</p>
+<br />
+<textarea readonly cols=73 rows=20>{{ message.text }}</textarea>
+
+{% endblock %}

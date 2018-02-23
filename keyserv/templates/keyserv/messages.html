@@ -1,0 +1,22 @@
+{% extends "keyserv/base.html" %}
+
+{% block title %}
+Keys
+{% endblock %}
+
+{% block content %}
+<h3> Messages </h3>
+<p>Below, you'll find encrypted messages posted from one party to another.</p>
+
+{% if messages %}
+    <p>Messages:</p>
+    <ul>
+    {% for each in messages %}
+    <li><a href="{% url 'keyserv:message_deets' each.id %}">{{ each.to_user }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No messages found:[</p>
+{% endif %}
+
+{% endblock %}
