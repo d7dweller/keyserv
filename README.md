@@ -10,6 +10,7 @@ The purpose of this application is solely for learning Django development using 
 
 ### The app explained
 =====================
+
 The purpose of this site/app is to host GPG keys uploaded to facilitate encrypted communications between site users.
 
 Currently, the only available actions on the site are to view already uploaded keys.
