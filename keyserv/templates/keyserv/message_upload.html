@@ -2,8 +2,8 @@
 
 {% block content %}
 {% if form %}
-    <p> Upload your key below! </p>
-    <form action="/key/upload/" method="post">
+    <p> Upload your message below! </p>
+    <form action="/message/upload/" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button class="save btn btn-default" type="submit">Send it</button>
